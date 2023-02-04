@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BlogController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Bonjour {{ controller_name }}! ✅</h1>
+
+    <section class="article">
+        <article>
+            <h2>Titre de l'article</h2>
+            <div class="metadata">Ecrit le 10/12/2023 à 21:27 dans la catégorie politique</div>
+            <div class="content"><img src="https://via.placeholder.com/350x150" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi consequatur cupiditate
+                    exercitationem impedit tempore!</p>
+                <p>Accusamus aliquam aliquid cumque dolor hic, ipsa, nesciunt nihil officia quis reprehenderit saepe
+                    veniam voluptatibus!</p>
+                <a href="{{ path('blog_show') }}" class="btn btn-primary">lire la suite</a></div>
+        </article>
+        <article>
+            <h2>Titre de l'article</h2>
+            <div class="metadata">Ecrit le 10/12/2023 à 21:27 dans la catégorie politique</div>
+            <div class="content"><img src="https://via.placeholder.com/350x150" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur eos eum ipsam totam
+                    vel?</p>
+                <p>A adipisci atque deserunt dolorum fuga minima nemo placeat sapiente sed, sequi vel voluptas
+                    voluptatem?</p>
+                <a href="{{ path('blog_show') }}" class="btn btn-primary">lire la suite</a></div>
+        </article>
+        <article>
+            <h2>Titre de l'article</h2>
+            <div class="metadata">Ecrit le 10/12/2023 à 21:27 dans la catégorie politique</div>
+            <div class="content"><img src="https://via.placeholder.com/350x150" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur debitis, ipsam quod
+                    quos sit!</p>
+                <p>Architecto atque, culpa deserunt eius eveniet illo maiores, nemo obcaecati omnis quo quod, rerum
+                    soluta!</p>
+                <a href="{{ path('blog_show') }}" class="btn btn-primary">lire la suite</a></div>
+        </article>
+    </section>
+</div>
+{% endblock %}
